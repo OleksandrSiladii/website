@@ -1,0 +1,20 @@
+@import '../utilities/color';
+@import '../utilities/variables';
+
+.loader {
+  position: fixed;
+  display: flex;
+  top: $main-header-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $loader-bg;
+
+  &-img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+  }
+}

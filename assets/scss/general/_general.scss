@@ -1,0 +1,122 @@
+@import '../utilities/color';
+@import '../utilities/variables';
+
+// General classes for project
+html {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+
+  body {
+    height: 100%;
+    min-height: .1rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.clearfix {
+  @extend %clearFix;
+}
+
+.flex {
+  display: flex;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+.error {
+  color: $red;
+}
+
+// Icons ----------------------------
+.icon {
+  display: inline-block;
+  background: {
+    repeat: no-repeat;
+    size: cover;
+  }
+  vertical-align: middle;
+  transition: all $trans-time $trans-func;
+}
+
+.icon-process {
+  width: 3rem;
+  height: 3rem;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22-243%20246%2024.2%2022%22%20width%3D%2232%22%20height%3D%2232%22%3E%3Cpath%20d%3D%22M-223.5%20264.6c-2%202-4.8%203.1-7.6%203.1s-5.6-1.1-7.6-3.1c-1.6-1.6-2.6-3.7-2.9-5.9l3.1-.5c.3%201.6%201.1%203%202.2%204.2%203%202.9%207.8%202.9%2010.8%200l-3.3-3.3%209.9-1.1-1.2%209.9-3.4-3.3zm-18.4-18.6l3.4%203.4c4.3-4.2%2011.1-4.2%2015.3%200%201.6%201.6%202.6%203.7%202.9%205.9l-3.1.5c-.3-1.6-1.1-3-2.2-4.2-3-2.9-7.8-2.9-10.8%200l3.3%203.3-9.9%201.1%201.1-10z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.icon-search {
+  width: 2rem;
+  height: 2rem;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22-10625%20-5573%2020%2020.084%22%20width%3D%2232%22%20height%3D%2232%22%3E%3Cpath%20d%3D%22M-10605-5554.849l-5.21-5.21a8%208%200%200%200%201.6-4.79%208.256%208.256%200%201%200-3.613%206.723l5.21%205.21zm-17.563-10a5.8%205.8%200%201%201%205.8%205.8%205.81%205.81%200%200%201-5.8-5.8z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E');
+}
+
+// Prikol=)--------------------------
+.ac-block {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .6s ease-in;
+}
+
+.ac-label {
+  position: relative;
+  display: block;
+  padding: .2rem 1rem;
+  border-radius: .6rem;
+  background-color: $ac-label-bg;
+  cursor: pointer;
+}
+
+.ac-arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: .3rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: $ac-arrow-bg;
+  vertical-align: middle;
+  transform: translateY(-50%);
+  transition: all $trans-time $trans-func;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: .5rem;
+    left: .7rem;
+    width: .8rem;
+    height: .8rem;
+    border: {
+      right: .1rem solid $ac-arrow;
+      bottom: .1rem solid $ac-arrow;
+    }
+    transform: rotate(45deg);
+  }
+}
+
+.ac-radio {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+
+  &:checked {
+    + .ac-label .ac-arrow {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    ~ .ac-block {
+      max-height: 80rem;
+      transition: all .8s ease-out;
+    }
+  }
+}

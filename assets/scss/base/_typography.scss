@@ -1,0 +1,65 @@
+@import '../utilities/fonts_variables';
+@import '../utilities/mixins';
+
+// Typography style
+html {
+  font-size: $base-font-size;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @include default-font-size($size-body);
+  font: {
+    family: $base-font-family;
+    weight: 400;
+  };
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: {
+    family: $base-font-family;
+    weight: 700;
+  };
+}
+
+h1 {
+  @include default-font-size($size-h1);
+  @include default-margin($size-h1);
+}
+
+h2 {
+  @include default-font-size($size-h2);
+  @include default-margin($size-h2);
+}
+
+h3 {
+  @include default-font-size($size-h3);
+  @include default-margin($size-h3);
+}
+
+h4 {
+  @include default-font-size($size-h4);
+  @include default-margin($size-h4);
+}
+
+h5 {
+  @include default-font-size($size-h5);
+  @include default-margin($size-h5);
+}
+
+h6 {
+  @include default-font-size($size-h6);
+  @include default-margin($size-h6);
+}
+
+q,
+blockquote {
+  @include default-font-size($size-q);
+}

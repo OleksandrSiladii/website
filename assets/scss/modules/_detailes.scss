@@ -1,0 +1,99 @@
+@import '../utilities/color';
+@import '../utilities/variables';
+
+.details {
+  &-head {
+    margin-bottom: 2rem;
+    padding-right: 2.6rem;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  &-img-wrap {
+    float: left;
+    height: 18rem;
+    margin-right: 1.5rem;
+  }
+
+  &-img {
+    width: auto;
+    height: 100%;
+  }
+
+  &-info {
+    margin: 0;
+    color: $details-text;
+    font-size: 1.3rem;
+
+    &.list + .details-info.list {
+      margin: {
+        top: 0;
+        left: 1em;
+      }
+    }
+
+    + .details-info {
+      margin-top: .5em;
+    }
+  }
+
+  &-info-title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &-info-label {
+    color: $details-label;
+    font-weight: 600;
+  }
+
+  &-info-block + .details-info-block {
+    margin-top: 2rem;
+
+    &.low-margin {
+      margin-top: 1rem;
+    }
+  }
+
+  .ac-block {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: $small-screen-down) {
+  .details-info {
+    font-size: 1.5rem;
+
+    &-title {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: $medium-screen-down) {
+  .details {
+    &-img-wrap {
+      height: 22rem;
+      margin-right: 2rem;
+    }
+
+    &-info {
+      font-size: 1.6rem;
+    }
+
+    &-info-title {
+      font-size: 2rem;
+    }
+
+    &-info-block + .details-info-block {
+      margin-top: 2.6rem;
+    }
+
+    .ac-block {
+      padding: 0 2rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "test-azinec",
+  "authors": [
+    "SviatoslavPrigara"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js/libs"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

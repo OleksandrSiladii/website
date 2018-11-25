@@ -1,0 +1,25 @@
+@import '../utilities/color';
+@import '../utilities/placeholder';
+
+// Base style (tag only)
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  @extend %noIndent;
+  background: $base-bg;
+  color: $base-text;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

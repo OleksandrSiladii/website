@@ -1,0 +1,69 @@
+// General ---------------
+$white: #fff;
+$black: #000;
+
+$grey   : #808080;
+$red    : #a90000;
+$orange : #ff6f0e;
+// -----------------------
+
+// Base ------------------
+$base-bg    : #ececec;
+$base-text  : $black;
+$base-border: $grey;
+// -----------------------
+
+// Accordion -------------
+$ac-label-bg: #d8d8d8;
+$ac-arrow-bg: $orange;
+$ac-arrow: $white;
+// -----------------------
+
+// Buttons ---------------
+$close-btn     : $black;
+$load-mode-text: $white;
+$load-mode-bg  : $orange;
+$menu-btn      : #ff6f0e;
+// -----------------------
+
+// Form elements ---------
+$dd-field-text         : #c7c7c7;
+$dd-field-active-text  : $white;
+$dd-field-active-border: $white;
+$dd-list-bg            : rgba($black, .82);
+$dd-list-text          : #ccc;
+$dd-list-hover-bg      : $black;
+$dd-list-hover-text    : $white;
+
+$check-color           : $white;
+
+$search-text           : $white;
+$search-focus-border   : $white;
+// -----------------------
+
+// Popup -----------------
+$popup-border : $base-border;
+$popup-bg     : $white;
+// -----------------------
+
+// Main Header -----------
+$main-header-bg     : #1a2b6d;
+$main-header-text   : $white;
+$main-header-menu-bg: rgba($black, .85);
+// -----------------------
+
+// Products list ---------
+$product-item-border : #dadada;
+$product-item-bg     : $white;
+$product-item-alc    : $red;
+$product-item-name   : #4a4a4a;
+//------------------------
+
+// Details ---------------
+$details-text: #202020;
+$details-label: $black;
+// -----------------------
+
+// Loader ----------------
+$loader-bg: rgba(#fff, .85);
+//------------------------

@@ -1,0 +1,44 @@
+@import '../utilities/color';
+@import '../utilities/variables';
+
+
+.logo {
+  color: #f6ac00;
+  font-size: 32px;
+margin: 10px 0;
+  span {
+    color: #fff;
+  }
+}
+
+.main-header {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: $main-header-bg;
+  color: $main-header-text;
+  box-shadow: 0 .3rem .6rem rgba($black, .16), 0 .3rem .6rem rgba($black, .23);
+  z-index: 10;
+
+  &-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    //height: $main-header-height;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .phone {
+
+    margin: 10px 16px;
+
+    &-wrap {
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+  }
+}
+
