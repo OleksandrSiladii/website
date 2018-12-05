@@ -311,11 +311,11 @@
       <div class="popup-body">
         <h2>Залишіть заявку</h2>
         <p>Ми передзвонимо Вам найближчим часом!</p>
-        <div class="form-section">
-          <input type="text" placeholder="Ваше ім'я">
-          <input type="tel" placeholder="Телефон">
-          <button class="btn orange">Замовити обратний звінок</button>
-        </div>
+        <form action="https://formspree.io/m424242@gmail.com" method="POST" class="form-section">
+          <input name="name" type="text" placeholder="Ваше ім'я">
+          <input name="phone" type="tel" placeholder="Телефон">
+          <input type="submit" class="btn orange" value="Замовити обратний звінок">
+        </form>
       </div>
     </div>
   </div>
