@@ -4,7 +4,6 @@ $(document).ready(function () {
   
   // var sendForm = $('#sendForm');
 
-
   var popup = $('.popup');
   var popupBackdrop = $('.popup-backdrop');
   var popupClose = $('.popup-close');

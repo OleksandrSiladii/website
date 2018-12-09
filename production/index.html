@@ -298,12 +298,8 @@
           <p class="copyright">© 2018 by ITG.</p>
         </div>
       </div>
-
-
     </section>
   </main>
-
-
   <div class="popup">
     <div class="popup-backdrop"></div>
     <div class="popup-wrap">
@@ -312,17 +308,21 @@
         <h2>Залишіть заявку</h2>
         <p>Ми передзвонимо Вам найближчим часом!</p>
         <form action="https://formspree.io/m424242@gmail.com" method="POST" class="form-section">
-          <input name="name" type="text" placeholder="Ваше ім'я">
-          <input name="phone" type="tel" placeholder="Телефон">
+          <input name="name" type="text" placeholder="Ваше ім'я" required>
+          <!--<input name="phone" type="tel" placeholder="Телефон">-->
+          <input name="phone" type="tel" class="field" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/>
           <input type="submit" class="btn orange" value="Замовити обратний звінок">
         </form>
       </div>
     </div>
   </div>
+
   <!--<div class="loader" id="loader"><img class="loader-img" src="./images/loader.gif" alt="loading..." width="100px" height="100px"></div>-->
 </div>
 
 <script src="./js/libs/jquery/jquery.min.js"></script>
+<script src="./js/libs/ajax.js"></script>
+<script src="./js/libs/maskinput.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

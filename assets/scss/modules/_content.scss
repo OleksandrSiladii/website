@@ -1,7 +1,6 @@
 @import '../utilities/color';
 @import '../utilities/variables';
 
-
 .main-content {
   overflow: auto;
 }
@@ -375,9 +374,36 @@
       margin: 10px 0;
     }
 
-    .btn{
+    .btn {
       margin: 10px 10px;
     }
+  }
+}
+
+.success-wrap {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 16px;
+  align-items: center;
+}
+
+.success-title {
+  font-size: 38px;
+  text-align: center;
+  color: #3e3e3e;
+  margin: 40px 0;
+}
+
+.success-link {
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2743e6;
+
+  svg {
+    margin-right: 20px;
   }
 }
 
