@@ -1,11 +1,10 @@
 @import '../utilities/color';
 @import '../utilities/variables';
 
-
 .logo {
   color: #f6ac00;
   font-size: 32px;
-margin: 10px 0;
+  margin: 10px 0;
   span {
     color: #fff;
   }
@@ -29,8 +28,14 @@ margin: 10px 0;
   }
 
   .phone {
-
+    display: inline-flex;
     margin: 10px 16px;
+    align-items: flex-start;
+    max-width: 400px;
+
+    img {
+      margin-right: 10px;
+    }
 
     &-wrap {
       margin-left: auto;
@@ -38,7 +43,23 @@ margin: 10px 0;
       flex-wrap: wrap;
       align-items: center;
     }
+  }
 
+  .phone-numbers {
+   display: inline-flex;
+    flex-wrap: wrap;
+
+    li {
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media (min-width: $small-screen) {
+  .main-header {
+    .phone-numbers li {
+      flex-basis: 50%;
+    }
   }
 }
 
