@@ -7,7 +7,7 @@ $product = "Антена";
 $name = stripslashes(htmlspecialchars($_POST['name']));
 $phone = stripslashes(htmlspecialchars($_POST['phone']));
 
-if (empty($name) || empty($phone)) {
+if (empty($phone)) {
     echo '<h1 style="color:red;">Пожалуйста заполните все поля</h1>';
     echo '<meta http-equiv="refresh" content="2; url=http://' . $_SERVER['SERVER_NAME'] . '">';
 } else {
