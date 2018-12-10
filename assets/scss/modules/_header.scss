@@ -29,9 +29,10 @@
 
   .phone {
     display: inline-flex;
-    margin: 10px 16px;
+    //margin: 10px 16px;
     align-items: flex-start;
-    max-width: 400px;
+    max-width: 375px;
+  
 
     img {
       margin-right: 10px;
@@ -46,11 +47,16 @@
   }
 
   .phone-numbers {
-   display: inline-flex;
+    display: none;
     flex-wrap: wrap;
 
     li {
       flex-basis: 100%;
+      padding: 2px 0;
+    }
+    
+    a {
+      color: #fff;
     }
   }
 }
@@ -60,6 +66,12 @@
     .phone-numbers li {
       flex-basis: 50%;
     }
+  }
+}
+
+@media (min-width: 800px) {
+  .main-header .phone-numbers {
+    display: inline-flex;
   }
 }
 
